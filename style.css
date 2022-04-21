@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 #body {
@@ -13,7 +16,7 @@ body {
 #leftside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     flex: 1 1 0%;
     height: 100vh;
     background-image: url("background.jpg");
@@ -41,22 +44,89 @@ body {
     align-items: center;
 }
 
+#photocredit {
+    color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 #header {
-    outline: 1px solid yellow;
-    flex: 1.3 1 0%;
+    outline: 2px solid blue;
+    background-color: rgb(235, 235, 235);
+    flex: 1 0 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24pt;
-    padding: 0 50px;
+    padding: 0 40px;
 }
 
 #signup {
-    outline: 1px solid yellow;
-    flex: 1 1 0%;
+    margin: 0;
+    border: 2px solid red;
+    flex: 1 0 40%;
+    box-shadow: 0 10px 20px -2px rgb(22 22 22);
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+#signupheader {
+    font-size: 18pt;
+}
+
+#signupform {
+    font-size: 10pt;
+    font-weight: 400;
+    box-shadow: 0 10px 20px -2px rgb(22 22 22);
 }
 
 #buttons {
-    outline: 1px solid yellow;
-    flex: 1 1 0%;
+    
+    background-color: rgb(235, 235, 235);
+    flex: 1 0 30%;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+#signupform ul{
+    display: flex;
+    justify-content: left;
+    gap: 60px;
+    padding-left: 0;
+}
+
+#signupform li {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#signupform input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#formleft, #formright {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#buttons button {
+    background-color: #3588a1;
+    color:#fff;
+    font-size: 14pt;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    height: 3em;
+    width: 12em;
+}
+
+#buttons a {
+    color: rgb(53, 136, 161);
+    font-weight: 700;
+    text-decoration: none;
 }

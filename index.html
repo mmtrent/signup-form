@@ -10,14 +10,50 @@
 <body>
     <div id="body">
         <div id="leftside">
+            <div id="blank"></div>
             <div id="logo">Peepee</div>
+            <div id="photocredit">Image courtesy Drew Dau unsplash.com</div>
         </div>
         <div id="rightside">
             <div id="header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis quam sodales augue bibendum.</div>
-            <div id="signup">sign up</div>
+            <div id="signup">
+                <div id="signupheader"><p>Sign up now.</p></div>
+                <form action="/signup-form" method="post" id="signupform">
+                    <ul>
+                        <div id="formleft">
+                            <li>
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" id="firstname" name="user_first_name">
+                            </li>
+                            <li>
+                                <label for="email">EMAIL</label>
+                                <input type="text" id="email" name="email">
+                            </li>
+                            <li>
+                                <label for="password">PASSWORD</label>
+                                <input type="text" id="password" name="password_input">
+                            </li>
+                        </div>
+                        <div id="formright">
+                            <li>
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname" name="user_last_name">
+                            </li>
+                            <li>
+                                <label for="phonenumber">PHONE NUMBER</label>
+                                <input type="text" id="phonenumber" name="phone_number">
+                            </li>
+                            <li>
+                                <label for="passwordvalidate">CONFIRM PASSWORD</label>
+                                <input type="text" id="passwordvalidate" name="password_validate">
+                            </li>
+                    </div>
+                    </ul>
+                </form>
+            </div>
             <div id="buttons">
                 <button>Create Account</button>
-                <p>Already have and account? <a href="">Log In</a></p>
+                <p>Already have an account? <a href="">Log In</a></p>
             </div>
         </div>
     </div>
