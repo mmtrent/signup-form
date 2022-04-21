@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign In</title>
 </head>
 <body>
     <div id="body">
         <div id="leftside">
             <div id="blank"></div>
-            <div id="logo">Peepee</div>
+            <div id="logo">Hello</div>
             <div id="photocredit">Image courtesy Drew Dau unsplash.com</div>
         </div>
         <div id="rightside">
@@ -27,11 +28,11 @@
                             </li>
                             <li>
                                 <label for="email">EMAIL</label>
-                                <input type="text" id="email" name="email">
+                                <input type="email" id="email" name="email">
                             </li>
                             <li>
                                 <label for="password">PASSWORD</label>
-                                <input type="text" id="password" name="password_input">
+                                <input type="password" id="password" name="password_input" onkeyup="check()">
                             </li>
                         </div>
                         <div id="formright">
@@ -45,7 +46,8 @@
                             </li>
                             <li>
                                 <label for="passwordvalidate">CONFIRM PASSWORD</label>
-                                <input type="text" id="passwordvalidate" name="password_validate">
+                                <input type="password" id="passwordvalidate" name="password_validate" onkeyup="check()">
+                                <div id="message"></div>
                             </li>
                     </div>
                     </ul>

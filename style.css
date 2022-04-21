@@ -52,7 +52,6 @@ body {
 }
 
 #header {
-    outline: 2px solid blue;
     background-color: rgb(235, 235, 235);
     flex: 1 0 30%;
     display: flex;
@@ -64,9 +63,7 @@ body {
 
 #signup {
     margin: 0;
-    border: 2px solid red;
     flex: 1 0 40%;
-    box-shadow: 0 10px 20px -2px rgb(22 22 22);
     padding-left: 40px;
     padding-bottom: 20px;
 }
@@ -78,11 +75,9 @@ body {
 #signupform {
     font-size: 10pt;
     font-weight: 400;
-    box-shadow: 0 10px 20px -2px rgb(22 22 22);
 }
 
 #buttons {
-    
     background-color: rgb(235, 235, 235);
     flex: 1 0 30%;
     padding-top: 25px;
@@ -100,6 +95,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 200px;
+}
+
+#signupform .error {
+    border: 2px solid red;
+}
+
+#signupform .match {
+    border: 2px solid green;
 }
 
 #signupform input {
@@ -123,6 +126,7 @@ body {
     border-radius: 10px;
     height: 3em;
     width: 12em;
+    cursor: pointer;
 }
 
 #buttons a {
